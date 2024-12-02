@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/evo.store/ontologies/2024/10/untitled-ontology-15"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/evo.store/ontologies/2024/10/untitled-ontology-15">
+    <Prefix name="" IRI="http://www.semanticweb.org/evo.store/ontologies/2024/10/untitled-ontology-15"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Program"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managesProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studyInProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#taughtBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teachesSubject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#academicRank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maximumYears"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minimumYears"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#priceInEUR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#priceInSYP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#programName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#subjectName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#teacherEmail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ADM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AWM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BMM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MWS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSW"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentElias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentLmar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentNasr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentOmar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentRaghad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentReem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeacherAli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TeacherBasel"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Subject"/>
+        <NamedIndividual IRI="#AWM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#ADM"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#ADM"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#AWM"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#AWM"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#BMM"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#BMM"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#SSE"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#SSE"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#SSQ"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#SSQ"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <NamedIndividual IRI="#SSW"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#taughtBy"/>
+        <NamedIndividual IRI="#SSW"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentElias"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentLmar"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentNasr"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentOmar"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentRaghad"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <NamedIndividual IRI="#StudentReem"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#managesProgram"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+        <NamedIndividual IRI="#ITE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+        <NamedIndividual IRI="#BMM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+        <NamedIndividual IRI="#SSQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+        <NamedIndividual IRI="#ADM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+        <NamedIndividual IRI="#SSE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#managesProgram"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+        <NamedIndividual IRI="#MWS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+        <NamedIndividual IRI="#AWM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+        <NamedIndividual IRI="#SSW"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#ADM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#ADM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#ADM"/>
+        <Literal>Data Mining</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#AWM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#AWM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#AWM"/>
+        <Literal>Advanced Web Methods</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#BMM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#BMM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#BMM"/>
+        <Literal>Multimedia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximumYears"/>
+        <NamedIndividual IRI="#ITE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minimumYears"/>
+        <NamedIndividual IRI="#ITE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programName"/>
+        <NamedIndividual IRI="#ITE"/>
+        <Literal>Information Technology Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maximumYears"/>
+        <NamedIndividual IRI="#MWS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#minimumYears"/>
+        <NamedIndividual IRI="#MWS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#programName"/>
+        <NamedIndividual IRI="#MWS"/>
+        <Literal>Web Science Master</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#SSE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#SSE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#SSE"/>
+        <Literal>Software Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#SSQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#SSQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#SSQ"/>
+        <Literal>Software Quality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInEUR"/>
+        <NamedIndividual IRI="#SSW"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#priceInSYP"/>
+        <NamedIndividual IRI="#SSW"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#subjectName"/>
+        <NamedIndividual IRI="#SSW"/>
+        <Literal>Semantic Web</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentElias"/>
+        <Literal>elias</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentLmar"/>
+        <Literal>lamar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentNasr"/>
+        <Literal>nasr</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentOmar"/>
+        <Literal>omar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentRaghad"/>
+        <Literal>raghad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentName"/>
+        <NamedIndividual IRI="#StudentReem"/>
+        <Literal>reem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicRank"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+        <Literal>Associate Professor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teacherEmail"/>
+        <NamedIndividual IRI="#TeacherAhmed"/>
+        <Literal>Ahmed@virtualsvu.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicRank"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+        <Literal>Assistant Professor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teacherEmail"/>
+        <NamedIndividual IRI="#TeacherAli"/>
+        <Literal>ali@virtualsvu.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#academicRank"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+        <Literal>Full Professor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teacherEmail"/>
+        <NamedIndividual IRI="#TeacherBasel"/>
+        <Literal>basel@virtualsvu.com</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#managesProgram"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#taughtBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managesProgram"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#taughtBy"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToProgram"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#managesProgram"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#studyInProgram"/>
+        <Class IRI="#Program"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#taughtBy"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teachesSubject"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#academicRank"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maximumYears"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#minimumYears"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#priceInEUR"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#priceInSYP"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#programName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#studentName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#subjectName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#teacherEmail"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#academicRank"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maximumYears"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minimumYears"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#priceInEUR"/>
+        <Class IRI="#Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#priceInSYP"/>
+        <Class IRI="#Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#programName"/>
+        <Class IRI="#Program"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#studentName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#teacherEmail"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#academicRank"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maximumYears"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minimumYears"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#priceInEUR"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#priceInSYP"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#programName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#studentName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#teacherEmail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
